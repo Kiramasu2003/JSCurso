@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Manejo DOM con JS</title>
+  </head>
+  <body onload="entrar()">
+    <h1 id='titulo' onmouseover="rojo(this)" onmouseout="azul(this)" onmousedown="verde(this)" onmouseup="morado(this)" onclick="amarillo(this)">Manejo de Eventos con DOM y JS</h1>
+    <br/>
+    <script>
+      function rojo(titulo) {
+        console.log('Cambio a rojo');
+        titulo.style.color = 'red';
+      }
+
+      function azul(titulo) {
+        console.log('Cambio a azul');
+        titulo.style.color = 'blue';
+      }
+
+      function verde(titulo) {
+        console.log('Cambio a verde');
+        titulo.style.color = 'green';
+      }
+
+      function morado(titulo) {
+        console.log('Cambio a morado');
+        titulo.style.color = 'purple';
+      }
+
+      function amarillo(titulo) {
+        console.log('Cambio a amarillo');
+        titulo.style.color = 'yellow';
+      }
+    </script>
+  </body>
+</html>
