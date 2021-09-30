@@ -6,7 +6,7 @@ const persona = {
 
 function cambiarValorObjeto(p1){
     p1.nombre = 'Carlos';
-    p1.apellidos = 'Arce Bernal';
+    p1.apellidos = 'Arce Roldán';
 }
 
 cambiarValorObjeto(persona);
