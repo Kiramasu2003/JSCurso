@@ -1,0 +1,32 @@
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    /*border-spacing: 5px*/
+    padding: 5px;
+}
+td{
+    text-align: center;
+}
+th{
+    text-align: left;
+}
+
+caption{
+    color: #e63946;
+    font-family: 'Toffice', serif;
+    font-size: 45px;
+    line-height:70px;
+}
+
+th{
+    color: #f1faee;
+    background-color: #1d3557;
+}
+/*renglones pares*/
+tr:nth-child(even){
+    background-color: #f1faee;
+}
+/*renglones impares*/
+tr:nth-child(odd){
+    background-color: #a8dadc;
+}
