@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo DOM con JS</title>
+</head>
+<body>
+    <h1 id="Titulo">Manejo DOM con JS</h1>
+    <button onclick="mostrar()">Mostrar</button>
+    <br/>
+    <img id="img" src="http://globalmentoring.com.mx/imagenes/javascript.png" alt="">
+  <script>
+      document.write('Saludos desde JS');
+
+
+
+      function mostrar() {
+          //document.write('Adios');
+          document.getElementById('Titulo').style.color = 'blue';
+          document.getElementById('Titulo').innerHTML += '<br/>Nuevo Titulo';
+          document.getElementById('img').src = 'http://globalmentoring.com.mx/imagenes/html5.png';
+
+      }
+  </script>
+</body>
+</html>
