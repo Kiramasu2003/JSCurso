@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#titulo_principal {
+    color: darkviolet;
+    text-align: justify-all;
+    margin: 15px;
+
+}
+.titulo{
+    color: crimson;
+    text-align: center;
+    margin: 15px;
+}
+
+h2{
+    color:blue;
+}
+
+p{
+    color: darkgreen;
+}
+
+/*Clase de CSS*/
+.tarjeta{
+    border: 10px solid darkviolet;
+    background-color: #f1faee;
+    text-align: center;
+    margin: 15px 10px;
+    padding: 15px;
+}
+
+.titulo2{
+    color: pink;
+    text-align: center;
+}
+
+.marco{
+    width: 100%;
+    height: 200%;
+    border: 1px solid pink;
+}
+
+
+
+

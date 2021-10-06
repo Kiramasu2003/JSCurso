@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo DOM con JS</title>
+    <style>
+        .azul{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="cabecero" class = 'azul'>DOM con JS</h1>
+    <p id="parrafo1" class = 'azul'>Saludos!</p>
+    <p id="parrafo2" class = 'azul'>otro parrafo</p>
+    <script>
+        let cabecero = document.getElementById("cabecero");
+        console.log(`valor cabecero: ${cabecero.innerHTML}`);
+
+        let parrafo1 = document.getElementById("parrafo1");
+        console.log(`valor parrafo: ${parrafo1.innerHTML}`);
+        console.log(`Saludos desde JS`);
+
+        parrafo1.innerHTML = 'Nuevo valor del párrafo';
+        cabecero.innerHTML = 'Cambio de cabecero';
+
+        let parrafos = document.getElementsByTagName('p');
+        console.log(`No. párrafos: ${parrafos.length}`)
+
+        for (let i=0; i<parrafos.length; i++){
+            console.log(`i:${i} - ${parrafos[i].innerHTML}`);
+        }
+
+        let elementos = document.getElementsByClassName('azul');
+        console.log(`No. elementos: ${elementos.length}`)
+
+        for (let i=0; i<elementos.length; i++){
+            console.log(`i:${i} - ${elementos[i].innerHTML}`);
+        }
+
+        for(let elemento of elementos){
+            console.log(`i:${elemento.innerHTML}`)
+        }
+
+        let elementos2 = document.querySelectorAll('p.azul');
+        console.log(`No. elementos que tienen la clase azul: ${elementos2.length}`)
+    </script>
+</body>
+</html>

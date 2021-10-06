@@ -1,0 +1,21 @@
+h1{
+    color:blue;
+    text-align: center;
+}
+p{
+    color: white;
+    background-color: crimson;
+    /*background-color: white;*/
+    padding: 15px;
+    border: 10px solid powderblue;
+    /*margin: 50px;
+    margin-top: 40px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    */
+    /*margin: 40px 10px 20px 10px;
+     */
+    margin:auto 50px;
+    text-align: center;
+}
